@@ -1,4 +1,4 @@
-[![REUSE status]()]()
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-docs/btp-cloud-logging)](https://api.reuse.software/info/github.com/SAP-docs/btp-cloud-logging)
 
 # Contributions to the SAP Cloud Logging documentation
 
