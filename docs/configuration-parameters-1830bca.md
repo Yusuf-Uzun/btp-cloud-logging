@@ -361,7 +361,7 @@ Specifies the maximum number of provisionable ingest instances, which are scaled
 
 <a name="loio1830bca1b060484e9cfabc0e62472e8e__section_vc3_w1n_lzb"/>
 
-## Configuration Parameters for ingest\_otlp
+## Configuration Parameters for Ingest OTLP
 
 
 <table>
