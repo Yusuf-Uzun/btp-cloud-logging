@@ -21,8 +21,8 @@ OpenTelemetry support in SAP Cloud Logging needs to be enabled with a service in
 
     ```
     {
-        "ingest_otlp:": {
-            "enabled" "true"
+        "ingest_otlp": {
+            "enabled": "true"
         }
     }
     ```
