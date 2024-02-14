@@ -37,7 +37,7 @@ Description
 <tr>
 <td valign="top">
 
-Backend
+backend
 
 </td>
 <td valign="top">
@@ -47,7 +47,7 @@ No
 </td>
 <td valign="top">
 
-[Backend](configuration-parameters-1830bca.md#loio1830bca1b060484e9cfabc0e62472e8e__table_xyd_p3x_jzb) 
+[backend](configuration-parameters-1830bca.md#loio1830bca1b060484e9cfabc0e62472e8e__table_xyd_p3x_jzb) 
 
 </td>
 <td valign="top">
@@ -118,7 +118,7 @@ No
 </td>
 <td valign="top">
 
-Configures the data ingestion over the ingest-otlp endpoint \(OpenTelemetry Protocol\).
+Configures the data ingestion over the ingest-otlp endpoint \(OpenTelemetry Protocol\).Configures the maximum number of OpenSearch data nodes for disk-based auto-scaling. Must be between
 
 </td>
 </tr>
@@ -140,7 +140,7 @@ Integer
 </td>
 <td valign="top">
 
-The time in days until data \(see [Ingest Observability Data](ingest-observability-data-ba16ff7.md)\) is deleted. Range is between `1` and `90`. Defaults to `7`. That deletion of ingested data can also happen due to size-based curation. Changing this parameter will only affect newly created indices.
+The time in days until data \(see [Ingest Observability Data](ingest-observability-data-ba16ff7.md)\) is deleted. Range is between `1`Configures the maximum number of OpenSearch data nodes for disk-based auto-scaling. and `90`. Defaults to `7`. That deletion of ingested data can also happen due to size-based curation. Changing this parameter will only affect newly created indices.
 
 </td>
 </tr>
@@ -199,7 +199,7 @@ Refer to [Rotate the Ingestion Root CA Certificate](rotate-the-ingestion-root-ca
 
 <a name="loio1830bca1b060484e9cfabc0e62472e8e__section_fhr_wcn_lzb"/>
 
-## Configuration Parameters for Backend
+## Configuration Parameters for `backend`
 
 
 <table>
@@ -228,7 +228,7 @@ Description
 <tr>
 <td valign="top">
 
-max\_data\_notes
+max\_data\_nodes
 
 </td>
 <td valign="top">
@@ -243,7 +243,7 @@ Integer
 </td>
 <td valign="top">
 
-Configures the maximum number of OpenSearch data nodes for disk-based auto-scaling. Must be between `2` and `10`. Defaults to `10`. Indirectly, this parameter sets the maximum disk size for storing observability data as described in [Service Plans](service-plans-a9d2d1b.md). This parameter has no effect for the `dev` plan.
+`2` and `10`. Defaults to `10`. Indirectly, this parameter sets the maximum disk size for storing observability data as described in [Service Plans](service-plans-a9d2d1b.md). This parameter has no effect for the `dev` plan.
 
 </td>
 </tr>
@@ -253,7 +253,7 @@ Configures the maximum number of OpenSearch data nodes for disk-based auto-scali
 
 <a name="loio1830bca1b060484e9cfabc0e62472e8e__section_hnn_zbn_lzb"/>
 
-## Configuration Parameters for Dashboards
+## Configuration Parameters for `dashboards`
 
 
 <table>
@@ -307,7 +307,7 @@ Set a custom label to be displayed in OpenSearch Dashboards in the top bar to id
 
 <a name="loio1830bca1b060484e9cfabc0e62472e8e__section_o51_4bn_lzb"/>
 
-## Configuration Parameters for Ingest
+## Configuration Parameters for `ingest`
 
 
 <table>
@@ -351,7 +351,7 @@ Integer
 </td>
 <td valign="top">
 
-Specifies the maximum number of provisionable ingest instances, which are scaled automatically based on their overall CPU utilization. Must be between `2` and `10`. Defaults to `10`. This parameter impacts peak throughput and buffering. Scale-out happens when the overall CPU utilization exceeds 80%. Scale-in happens when the overall CPU utilization or configuration parameter decreases. This parameter has no effect on the `dev` plan, which is limited to a single instance.
+Specifies the maximum number of provisionable ingest instances, which are scaled automatically based on their overall CPU utilization. Must be between `2` and `10`. Defaults to `2`. This parameter impacts peak throughput and buffering. Scale-out happens when the overall CPU utilization exceeds 80%. Scale-in happens when the overall CPU utilization or configuration parameter decreases. This parameter has no effect on the `dev` plan, which is limited to a single instance.
 
 </td>
 </tr>
@@ -361,7 +361,7 @@ Specifies the maximum number of provisionable ingest instances, which are scaled
 
 <a name="loio1830bca1b060484e9cfabc0e62472e8e__section_vc3_w1n_lzb"/>
 
-## Configuration Parameters for Ingest OTLP
+## Configuration Parameters for `ingest_otlp`
 
 
 <table>
@@ -415,7 +415,7 @@ Enables ingestion over the OpenTelemetry Protocol. Defaults to false. For more i
 
 <a name="loio1830bca1b060484e9cfabc0e62472e8e__section_m4y_p1n_lzb"/>
 
-## Configuration Parameters for SAML
+## Configuration Parameters for `saml`
 
 > ### Caution:  
 > Ensure that you consider the [SAP BTP Security Recommendation BTP-CLS-0001](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?seclist-index=BTP-CLS-0001&version=Cloud).

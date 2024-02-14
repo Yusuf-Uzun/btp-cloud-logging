@@ -56,7 +56,8 @@
            externalName: cloud-logging-created-with-sap-btp-service-operators
            parameters:
              retentionPeriod: 14
-             esApiEnabled: false
+             ingest:
+                max_instances: 10
     
     ```
 
