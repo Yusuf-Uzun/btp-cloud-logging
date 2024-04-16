@@ -118,7 +118,7 @@ No
 </td>
 <td valign="top">
 
-Configures the data ingestion over the ingest-otlp endpoint \(OpenTelemetry Protocol\).Configures the maximum number of OpenSearch data nodes for disk-based auto-scaling. Must be between
+Configures the data ingestion over the ingest-otlp endpoint \(OpenTelemetry Protocol\).Configures the maximum number of OpenSearch data nodes for disk-based auto-scaling. Must be between `2` and `10`. Defaults to `10`.
 
 </td>
 </tr>
@@ -140,7 +140,7 @@ Integer
 </td>
 <td valign="top">
 
-The time in days until data \(see [Ingest Observability Data](ingest-observability-data-ba16ff7.md)\) is deleted. Range is between `1`Configures the maximum number of OpenSearch data nodes for disk-based auto-scaling. and `90`. Defaults to `7`. That deletion of ingested data can also happen due to size-based curation. Changing this parameter will only affect newly created indices.
+The time in days until data \(see [Ingest Observability Data](ingest-observability-data-ba16ff7.md)\) is deleted. Range is between `1` and `90`. Defaults to `7`. That deletion of ingested data can also happen due to size-based curation. Changing this parameter will only affect newly created indices.
 
 </td>
 </tr>
@@ -243,7 +243,7 @@ Integer
 </td>
 <td valign="top">
 
-`2` and `10`. Defaults to `10`. Indirectly, this parameter sets the maximum disk size for storing observability data as described in [Service Plans](service-plans-a9d2d1b.md). This parameter has no effect for the `dev` plan.
+Indirectly, this parameter sets the maximum disk size for storing observability data as described in [Service Plans](service-plans-a9d2d1b.md). This parameter has no effect for the `dev` plan. Needs to be between `2` and `10`. Default is `10`.
 
 </td>
 </tr>

@@ -57,7 +57,7 @@ Create a SAML 2.0 application in your Identity Authentication account based on t
 Go to `Applications & Resources`, choose `Applications`, and select your application from the list. Then perform the following steps to configure the SAML 2.0 application within Identity Authentication:
 
 1.  [Configure a Self-Defined Attribute](https://help.sap.com/docs/identity-authentication/identity-authentication/user-attributes?version=Cloud) with `Name` "groups," `Source` "Identity Directory," and `Value` "Groups."
-2.  [Configure Default Name ID Format](https://help.sap.com/docs/btp/sap-business-technology-platform/configure-entitlements-and-quotas-for-subaccounts?version=Cloud) to `E-mail`.
+2.  [Configure Default Name ID Format](https://help.sap.com/docs/identity-authentication/identity-authentication/configure-subject-name-identifier-sent-to-application?version=Cloud) to `E-mail`.
 3.  Select `SAML 2.0 Configuration` and `Configure Manually`.
     -   Set the name with value of the `sp.entity_id` from the Create a SAML 2.0 application step.
     -   Continue with one of the following options. **OPTION 1** is recommended, as it removes the need to specify the IdP SAML application's assertion/logout URL.

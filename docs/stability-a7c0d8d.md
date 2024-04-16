@@ -25,7 +25,7 @@ However, the flexibility in utilization and configuration of OpenSearch features
 Areas of usage that may result in service degradation when deviating from documented paths include:
 
 -   **Overloading the OpenSearch component**
--   -   **Exceeding Ingestion Limits**: going beyond the save ingestion limits specified in \[Service Plans\]\(service\_plans.md\) documentation may impact the service quality of the database. Deleting indices that is written to or filling the disk \(without considering auto-scaling\) within one day may disrupt service qualities.
+-   -   **Exceeding Ingestion Limits**: going beyond the save ingestion limits specified in [Service Plans](service-plans-a9d2d1b.md) documentation may impact the service quality of the database. Deleting indices that is written to or filling the disk \(without considering auto-scaling\) within one day may disrupt service qualities.
 -   **Resource-Intensive Recurring Tasks**: The configuration of recurring tasks in a resource-expensive way may impact the service quality of the database.
 -   **Backend API Usage**: OpenSearch API can be enabled which opens a plethora of possibilities to impact the service quality of the database.
 

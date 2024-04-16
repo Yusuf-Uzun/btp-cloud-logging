@@ -4,6 +4,11 @@
 
 
 
+> ### Note:  
+> If you are using this service as part of SAP Build Code, follow the [SAP Build Code Initial Setup](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/07698d7c31284e4db370acdf017cfd14.html?version=SHIP) instructions instead.
+
+
+
 <a name="loioac5029751b074e15ab7d49e5b461fa79__section_fgt_cdn_xyb"/>
 
 ## Prerequisites
