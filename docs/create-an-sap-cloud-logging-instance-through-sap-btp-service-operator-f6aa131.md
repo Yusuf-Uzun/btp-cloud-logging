@@ -106,7 +106,7 @@ This step results in a `secret` with the name `cls``sap-cloud-logging-integratio
     
     ```
 
-    We recommend you enable [credentials rotation](https://github.com/SAP/sap-btp-service-operator/blob/main/README.md#credentials-rotation) for the ServiceBinding, so that the configuration is updated automatically. Assure that the `rotationFrequency` binding parameter reflects a period of more than a day to avoid frequent restarts.
+    We recommend you enable [credentials rotation](https://github.com/SAP/sap-btp-service-operator/blob/main/README.md#credentials-rotation) for the ServiceBinding, so that the configuration is updated automatically. Assure that the *rotationFrequency* binding parameter reflects a period of more than a day to avoid frequent restarts.
 
     The binding creation automatically triggers the creation of a `secret` with the name `sap-cloud-logging` in in the same namespace.
 

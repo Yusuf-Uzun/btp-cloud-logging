@@ -61,7 +61,7 @@ OpenTelemetry support in SAP Cloud Logging needs to be enabled with a service in
     > Ensure that you consider the [SAP BTP Security Recommendation BTP-CLS-0003](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?seclist-index=BTP-CLS-0003&version=Cloud).
 
     > ### Note:  
-    > Use the `certValidityDays` to configure the validity period via a service binding parameter within the range of 1 to 180 days. For example, passing `'{"ingest":{"certValidityDays":30}}` as the configuration parameter for binding creation sets the validity to 30 days.
+    > Use the *certValidityDays* to configure the validity period via a service binding parameter within the range of 1 to 180 days. For example, passing `'{"ingest":{"certValidityDays":30}}` as the configuration parameter for binding creation sets the validity to 30 days.
 
     > ### Note:  
     > Deleting a binding doesn't revoke the corresponding certificate. [Rotate the Ingestion Root CA Certificate](rotate-the-ingestion-root-ca-certificate-bbcb3e7.md) if the root Certification Authority \(Certification Authority\) of your service instance expires soon, or the private key of a certificate was leaked.

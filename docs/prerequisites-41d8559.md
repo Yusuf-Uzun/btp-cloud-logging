@@ -54,11 +54,11 @@ Create a SAML 2.0 application in your Identity Authentication account based on t
 
 ### Configure the SAML 2.0 application
 
-Go to `Applications & Resources`, choose `Applications`, and select your application from the list. Then perform the following steps to configure the SAML 2.0 application within Identity Authentication:
+Go to *Applications & Resources*, choose *Applications*, and select your application from the list. Then perform the following steps to configure the SAML 2.0 application within Identity Authentication:
 
-1.  [Configure a Self-Defined Attribute](https://help.sap.com/docs/identity-authentication/identity-authentication/user-attributes?version=Cloud) with `Name` "groups," `Source` "Identity Directory," and `Value` "Groups."
-2.  [Configure Default Name ID Format](https://help.sap.com/docs/identity-authentication/identity-authentication/configure-subject-name-identifier-sent-to-application?version=Cloud) to `E-mail`.
-3.  Select `SAML 2.0 Configuration` and `Configure Manually`.
+1.  [Configure a Self-Defined Attribute](https://help.sap.com/docs/identity-authentication/identity-authentication/user-attributes?version=Cloud) with *Name* "groups," *Source* "Identity Directory," and *Value* "Groups."
+2.  [Configure Default Name ID Format](https://help.sap.com/docs/identity-authentication/identity-authentication/configure-subject-name-identifier-sent-to-application?version=Cloud) to *E-mail*.
+3.  Select *SAML 2.0 Configuration* and *Configure Manually*.
     -   Set the name with value of the `sp.entity_id` from the Create a SAML 2.0 application step.
     -   Continue with one of the following options. **OPTION 1** is recommended, as it removes the need to specify the IdP SAML application's assertion/logout URL.
     -   **OPTION 1:** Enable request signing.
@@ -74,13 +74,13 @@ Go to `Applications & Resources`, choose `Applications`, and select your applica
             
             ```
 
-        -   Enable request signing in Identity Authentication by setting `Require signed authentication requests` to `ON`, going to the `Signing Certificate` section, clicking `Add`, and uploading the certificate.
+        -   Enable request signing in Identity Authentication by setting *Require signed authentication requests* to *ON*, going to the *Signing Certificate* section, clicking *Add*, and uploading the certificate.
         -   Make sure to provide a signing key to the `sp.signature_private_key` field and set the sp.signature\_private\_key\_password field if the signing key is encrypted. The signing certificate in your Identity Authentication SAML 2.0 application can expire, and Identity Authentication rejects login attempts with the error message, "The digital signature of the received SAML2 message is invalid."
 
     -   **OPTION 2:** ⚠️ This step can only be done after an SAP Cloud Logging instance has been created and has to be repeated for each new service instance.
         -   Set `Assertion Consumer Service Endpoint` to the OpenSearch Dashboards URL plus`/_opendistro/_security/saml/acs`.
         -   Set `Single Logout Endpoint`: Set binding to HTTP\_REDIRECT and the URL must be the OpenSearch Dashboards URL without any path.
-        -   To store the configuration, click `Save` .
+        -   To store the configuration, click *Save* .
 
 
 

@@ -7,7 +7,8 @@ The SAP Cloud Logging service plans provide different ingestion and storage capa
 > ### Note:  
 > Updating service plans isn't supported. The recommended migration procedure involves running instances side-by-side during a transition.
 
-For production service plans, service instances scale automatically within the configured limits. To avoid disk overflow, there is time-based and disk-utilization-based data curation. If the disk usage watermark has been exceeded and the instance is scaled to its maximum, the system automatically deletes the oldest indices. The term `net storage capacity` used in service plan descriptions refers to the usable disk-size up to the watermark and has subtracted the disk space required for replicas. Service plans can handle peak load in relation to their storage volumes. However, service quality degradation can happen if the load exceeds the non-scaled disk capacity within one day.
+> ### Caution:  
+> For production service plans, service instances scale automatically within the configured limits. To avoid disk overflow, there is time-based and disk-utilization-based data curation. If the disk usage watermark has been exceeded and the instance is scaled to its maximum, the system automatically deletes the oldest indices. The term `net storage capacity` used in service plan descriptions refers to the usable disk-size up to the watermark and has subtracted the disk space required for replicas. Service plans can handle peak load in relation to their storage volumes. However, service quality degradation can happen if the load exceeds the non-scaled disk capacity within one day.
 
 To get an overview on the availability of SAP Cloud Logging according to region, infrastructure provider, and release status, visit the [SAP Discovery Center](https://discovery-center.cloud.sap/protected/index.html#/serviceCatalog/cloud-logging).
 

@@ -243,7 +243,7 @@ Integer
 </td>
 <td valign="top">
 
-Indirectly, this parameter sets the maximum disk size for storing observability data as described in [Service Plans](service-plans-a9d2d1b.md). This parameter has no effect for the `dev` plan. Needs to be between `2` and `10`. Default is `10`.
+Indirectly, this parameter sets the maximum disk size for storing observability data as described in [Service Plans](service-plans-a9d2d1b.md). This parameter has no effect for the *dev* plan. Needs to be between `2` and `10`. Default is `10`.
 
 </td>
 </tr>
@@ -351,7 +351,7 @@ Integer
 </td>
 <td valign="top">
 
-Specifies the maximum number of provisionable ingest instances, which are scaled automatically based on their overall CPU utilization. Must be between `2` and `10`. Defaults to `2`. This parameter impacts peak throughput and buffering. Scale-out happens when the overall CPU utilization exceeds 80%. Scale-in happens when the overall CPU utilization or configuration parameter decreases. This parameter has no effect on the `dev` plan, which is limited to a single instance.
+Specifies the maximum number of provisionable ingest instances, which are scaled automatically based on their overall CPU utilization. Must be between `2` and `10`. Defaults to `2`. This parameter impacts peak throughput and buffering. Scale-out happens when the overall CPU utilization exceeds 80%. Scale-in happens when the overall CPU utilization or configuration parameter decreases. This parameter has no effect on the *dev* plan, which is limited to a single instance.
 
 </td>
 </tr>
@@ -486,7 +486,7 @@ String
 </td>
 <td valign="top">
 
-The SAML group to grant administrative access and permissions to modify the security module. Required if `enabled` is set to `true`. Required if `enabled` is set to `true`.
+The SAML group to grant administrative access and permissions to modify the security module. Required if `enabled` is set to `true`. Required if *enabled* is set to `true`.
 
 </td>
 </tr>
@@ -508,7 +508,7 @@ Boolean
 </td>
 <td valign="top">
 
-Enables IdP-initiated SSO. Required if `enabled` is set to `true`.
+Enables IdP-initiated SSO. Required if *enabled* is set to `true`.
 
 </td>
 </tr>
@@ -532,7 +532,7 @@ String
 
 The list of backend\_roles will be read from this attribute during user login.
 
-This field must be set to the corresponding attribute for IdP groups,usually `groups`. Required if `enabled` is set to `true`.
+This field must be set to the corresponding attribute for IdP groups,usually `groups`. Required if *enabled* is set to `true`.
 
 </td>
 </tr>
@@ -554,7 +554,7 @@ URL
 </td>
 <td valign="top">
 
-The URL to get the SAML IdP metadata from. Required if `enabled` is set to `true`.
+The URL to get the SAML IdP metadata from. Required if *enabled* is set to `true`.
 
 </td>
 </tr>
@@ -578,7 +578,7 @@ String
 
 The Entity ID of the SAML IdP.
 
-Open the metadata URL in your browser and copy the full value of the `entityID` field. It is located in the first line of the response. Required if `enabled` is set to `true`.
+Open the metadata URL in your browser and copy the full value of the `entityID` field. It is located in the first line of the response. Required if *enabled* is set to `true`.
 
 </td>
 </tr>
@@ -600,7 +600,7 @@ String
 </td>
 <td valign="top">
 
-The Entity ID of the service provider. Generally, this parameter is set to the name of your application configured in your IdP. Required if `enabled` is set to `true`.
+The Entity ID of the service provider. Generally, this parameter is set to the name of your application configured in your IdP. Required if *enabled* is set to `true`.
 
 </td>
 </tr>
@@ -666,7 +666,7 @@ String
 </td>
 <td valign="top">
 
-Key to sign tokens. Provide a `random` key with an `even number (min. length: 32)` of `alphanumeric characters (A-Z, a-z, 0-9)`. A random key is generated if the key isn't provided.
+Key to sign tokens. Provide a *random* key with an *even number \(min. length: 32\)* of *alphanumeric characters \(A-Z, a-z, 0-9\)*. A random key is generated if the key isn't provided.
 
 </td>
 </tr>
