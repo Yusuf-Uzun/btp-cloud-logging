@@ -118,7 +118,7 @@ No
 </td>
 <td valign="top">
 
-Configures the data ingestion over the ingest-otlp endpoint \(OpenTelemetry Protocol\).Configures the maximum number of OpenSearch data nodes for disk-based auto-scaling. Must be between `2` and `10`. Defaults to `10`.
+Configures the data ingestion over the ingest-otlp endpoint \(OpenTelemetry Protocol\).
 
 </td>
 </tr>
@@ -405,7 +405,7 @@ Boolean
 </td>
 <td valign="top">
 
-Enables ingestion over the OpenTelemetry Protocol. Defaults to false. For more information, refer to [Ingest via OpenTelemetry API Endpoint](ingest-via-opentelemetry-api-endpoint-fdc78af.md).
+Enables ingestion over the OpenTelemetry Protocol. Defaults to `false`. For more information, refer to [Ingest via OpenTelemetry API Endpoint](ingest-via-opentelemetry-api-endpoint-fdc78af.md).
 
 </td>
 </tr>

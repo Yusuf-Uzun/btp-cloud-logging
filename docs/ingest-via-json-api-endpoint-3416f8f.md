@@ -167,7 +167,7 @@ If you cannot find the payload shipped in the respective index, the default dash
 
 ## Result
 
-You can analyze the ingested OpenTelemetry data in OpenSearch Dashboards \(see [Access and Analyze Observability Data](access-and-analyze-observability-data-dad5b01.md), based on custom dashboards or the Discover view. Indices match the following pattern: `logs-json-.*` 
+You can analyze the ingested data in OpenSearch Dashboards \(see [Access and Analyze Observability Data](access-and-analyze-observability-data-dad5b01.md), based on custom dashboards or the Discover view. Indices match the following pattern: `logs-json-.*` 
 
 > ### Note:  
 > There are OpenSearch specifics restricting ingestion, such as mapping conflicts. Mapping conflicts in OpenSearch occur when indices have conflicting field mappings, leading to ambiguity in data interpretation and query failures. Resolving these conflicts involves aligning field types, analyzers, and other properties across indices to ensure consistent data handling and accurate search results. Cloud Logging performs basic sanitation and unification steps to prevent mapping conflicts. However, sending type-aligned data is mandatory to prevent mapping conflicts.
