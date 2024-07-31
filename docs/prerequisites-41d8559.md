@@ -171,7 +171,7 @@ Set `sp.signature_private_key` and `sp.signature_private_key_password` if you se
 <tr>
 <td valign="top">
 
-Add `exchange_key` to sign tokens, or remove line. Provide a random key with an even character length \(minimum length: 32\) of alphanumeric characters \(A-Z, a-z, 0-9\). The system generates a randome key f the key is not provided.
+Add `exchange_key` to sign tokens, or remove line. Provide a random key with an even character length \(minimum length: 32\) of alphanumeric characters \(A-Z, a-z, 0-9\). The system generates a random key if the key is not specified.
 
 </td>
 </tr>
