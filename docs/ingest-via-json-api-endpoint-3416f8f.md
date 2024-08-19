@@ -23,7 +23,8 @@ You can use arbitrary log shippers to send to the mTLS ingest JSON API endpoint.
     tls true
     Compress gzip
     URI /
-   Format json
+    Format json
+    Retry_Limit 3
 
 ```
 
