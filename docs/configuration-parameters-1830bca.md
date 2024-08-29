@@ -486,7 +486,7 @@ String
 </td>
 <td valign="top">
 
-The SAML group to grant administrative access and permissions to modify the security module. Required if `enabled` is set to `true`. Required if *enabled* is set to `true`.
+The SAML group to grant administrative access and permissions to modify the security module. Required if *enabled* is set to `true`.
 
 </td>
 </tr>
