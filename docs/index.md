@@ -19,5 +19,4 @@ SAP Cloud Logging service is an instance-based and environment-agnostic observab
     -   [Rotate the Ingestion Root CA Certificate](rotate-the-ingestion-root-ca-certificate-bbcb3e7.md)
 -   [Access and Analyze Observability Data](access-and-analyze-observability-data-dad5b01.md)
 -   [Data Protection and Privacy](data-protection-and-privacy-80e76fd.md)
--   [Accessibility Features](accessibility-features-1c628e5.md)
 
